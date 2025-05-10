@@ -179,7 +179,7 @@ const handleSubmit = async (e) => {
                     disabled={loading}
                     className={`${
                       loading ? "opacity-50 cursor-not-allowed" : "hover:scale-110"
-                    } bg-red-600 hover:bg-red-700 text-white px-6 py-2 w-full max-w-[150px] rounded-full transition-all mx-auto block mt-2`}
+                    } bg-red-600 hover:bg-red-700 cursor-pointer text-white px-6 py-2 w-full max-w-[150px] rounded-full transition-all mx-auto block mt-2`}
                   >
                     {loading ? "Signing up..." : "Sign Up"}
                   </button>

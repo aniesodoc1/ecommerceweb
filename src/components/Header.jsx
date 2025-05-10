@@ -57,7 +57,7 @@ const Header = () => {
         <div className='container mx-auto h-full flex items-center justify-between'>
             <Link to="/" className='flex gap-2 items-center'>
                 <img src='/logo.png' alt='' className='h-9 w-9 rounded-2xl'/>
-                <p className='font-bold text-xl'>Frank Mosco</p>
+                <p className='font-bold text-xl'>Collins's shoping</p>
             </Link>
 
             <div className='hidden lg:flex items-center w-full justify-between max-w-sm border-2 border-blue-800 rounded-full focus-within:shadow pl-2'>
