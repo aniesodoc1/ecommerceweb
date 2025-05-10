@@ -1,11 +1,6 @@
-import { createContext, useContext, useEffect, useState } from "react";
-import { io } from "socket.io-client";
-import { AuthContext } from "./AuthContext";
-
 import { createContext, useEffect, useState } from "react";
 import { io } from "socket.io-client";
 import { useSelector } from "react-redux";
-
 
 export const SocketContext = createContext();
 
@@ -24,12 +19,8 @@ export const SocketContextProvider = ({ children }) => {
   };
 }, []);
 
-
   useEffect(() => {
-  currentUser && socket?.emit("newUser", currentUser.id);
-
     currentUser && socket?.emit("newUser", currentUser.id);
-
   }, [currentUser, socket]);
 
   return (
